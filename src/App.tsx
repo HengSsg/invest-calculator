@@ -9,7 +9,7 @@ import { calculateCompoundInterest } from './utils/calculateCompound';
 import { useInvestmentStore } from './store/investmentStore';
 
 function App() {
-  const { principal, rate, years, result, setResult } = useInvestmentStore();
+  const { principal, rate, years, setResult } = useInvestmentStore();
 
   const handleCalculate = () => {
     const r = calculateCompoundInterest(principal, rate, years);
